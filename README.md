@@ -34,7 +34,7 @@ brew install blackhole-2ch
 
 1. Download `VoiceChanger.zip` from the [latest release](https://github.com/abaicus/voice-changer/releases/latest).
 2. Unzip it and move `VoiceChanger.app` to `/Applications`.
-3. The app is not signed or notarized, so macOS blocks the first launch. Right-click the app, choose **Open**, then confirm. Or remove the quarantine flag:
+3. The app is not signed or notarized, so macOS blocks the first launch. Try to open it once and click **Done**, then go to **System Settings › Privacy & Security**, scroll down and click **Open Anyway**. Or remove the quarantine flag:
 
 ```sh
 xattr -dr com.apple.quarantine /Applications/VoiceChanger.app
