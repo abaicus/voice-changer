@@ -6,14 +6,15 @@
     [
       "@semantic-release/exec",
       {
-        "prepareCmd": "VERSION=${nextRelease.version} ./Scripts/build-app.sh && ./Scripts/package-app.sh"
+        "prepareCmd": "VERSION=${nextRelease.version} ./Scripts/build-app.sh && ./Scripts/package-app.sh && VERSION=${nextRelease.version} ./Scripts/render-cask.sh"
       }
     ],
     [
       "@semantic-release/github",
       {
         "assets": [
-          { "path": "build/VoiceChanger.zip", "label": "VoiceChanger.app (macOS, unsigned)" }
+          { "path": "build/VoiceChanger.zip", "label": "VoiceChanger.app (macOS, unsigned)" },
+          { "path": "build/voice-changer.rb", "label": "Homebrew cask" }
         ]
       }
     ]

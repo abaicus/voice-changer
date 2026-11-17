@@ -32,6 +32,14 @@ brew install blackhole-2ch
 
 ## Install
 
+With [Homebrew](https://brew.sh), which also installs BlackHole and clears the first-launch block:
+
+```sh
+brew install --cask abaicus/tap/voice-changer
+```
+
+Or by hand:
+
 1. Download `VoiceChanger.zip` from the [latest release](https://github.com/abaicus/voice-changer/releases/latest).
 2. Unzip it and move `VoiceChanger.app` to `/Applications`.
 3. The app is not signed or notarized, so macOS blocks the first launch. Try to open it once and click **Done**, then go to **System Settings › Privacy & Security**, scroll down and click **Open Anyway**. Or remove the quarantine flag:
